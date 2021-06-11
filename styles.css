@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef2f4;
+  background-image: radial-gradient(
+    circle farthest-corner at 18.7% 37.8%,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(225, 234, 238, 1) 90%
+  );
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+  color: #181d1f;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+.header .nav a {
+  margin-right: 15px;
+  color: #515154;
+  text-decoration: none;
+}
+
+.header .nav a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.header .nav a:last-child {
+  margin-right: 0;
+}
+a.download.small {
+  color: #fff;
+  width: auto;
+  padding: 0 25px;
+  height: 40px;
+}
+a.download.small:hover {
+  color: #fff;
+}
+
+.header .app-name {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+span.v {
+  font-size: 12px;
+  background: #e0e1e1;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+
+.app-name {
+  font-size: 28px;
+  line-height: 1.2858342857;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #1d1d1f;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.mb {
+  margin-bottom: 25px;
+}
+h1,
+p,
+span,
+.content .download {
+  margin-bottom: 25px;
+}
+a {
+  text-decoration: none;
+}
+.hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.content img {
+  margin-bottom: 35px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.download {
+  height: 50px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #0366d6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.download:hover {
+  text-decoration: none;
+  background-color: #085ec0;
+}
+.download:focus-within,
+.download:active {
+  text-decoration: none;
+  background-color: #0658b6;
+}
+.download-note {
+  font-size: 14px;
+  color: #5f5f5f;
+}
+
+.fotter {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.screenshot {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer {
+  color: #86868b;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  margin-right: 10px;
+  color: #515154;
+  text-decoration: none;
+}
+
+.links a:last-child {
+  margin-right: 0;
+}
+.links a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .screenshot img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .download.small {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .footer .links {
+    margin-top: 10px;
+  }
+}
